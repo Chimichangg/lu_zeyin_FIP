@@ -59,6 +59,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+	font-family: sans-serif;
 }
 
 h1, h2, h3, h4, p {
@@ -93,10 +94,15 @@ ___________________________________________ */
    }
 
    .box-model {
-	   margin: 1rem;
-	   padding: 1rem;
+	   padding: 1em;
 	   background: #000;
+	   color: white;
+	   text-align: center;
    }
+
+   .block {
+	display: block;
+}
 
    /*------- Floats --------*/
 
@@ -109,56 +115,83 @@ ___________________________________________ */
    }
 
    /*------- End Floats --------*/
+   
+ 
+ 
+ 
+ 
    /*------- Font Awesome -------*/
 
    /*------- End Font Awesome -------*/
 
+   
+ 
+ 
+ 
+ 
    /*------- Mobile Padding ---------*/
 
    .mobile-padding {
 	   padding: 0 1em;
    }
 
-   /*------- End Mobile Padding ---------*/
+   .margin-top {
+	   margin-top: 2.5em;
+   }
 
+   /*------- End Mobile Padding ---------*/
+ 
+ 
+ 
    @supports (grid-area: auto) {
 
 	/*------------ Start Mobile ------------*/
 
 	.site {
-		max-width: 799px;
+		max-width: 699px;
+	}
+
+	.margin-top {
+		margin-top: 2.5em;
 	}
 
 	/*------------ Mobile Grid Items ------------*/
 
+	
 	.head, .main > *, .foot {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 5vw repeat(2, 1fr) 5vw;
 	}
+	
 
 	.one-item {
 		display: grid;
-		grid-column: 1 / span 2;
+		grid-column: 2 / span 2;
 		grid-template-columns: 1fr;
 	}
 
 	.two-items {
 		display: grid;
-		grid-column: 1 / span 2;
+		grid-column: 2 / span 2;
 		grid-template-columns: repeat(2, 1fr);
 		justify-content: space-evenly;
-		row-gap: 2em;
-		column-gap: 2em;
+		row-gap: 5vw;
+		column-gap: 5vw;
 	}
 
 	.three-items {
 		display: grid;
-		grid-column: 1 / span 2;
-		grid-template-columns: repeat(3, 1fr);
+		grid-column: 2 / span 2;
+		grid-template-columns: repeat(2, 1fr);
 		justify-content: space-evenly;
-		row-gap: 2em;
-		column-gap: 2em;
+		row-gap: 5vw;
+		column-gap: 5vw;
 	}
+
+	.five-items {
+		display: block;
+	}
+
 
 	.contact-override {
 		display: grid;
@@ -174,25 +207,138 @@ ___________________________________________ */
 		grid-template-columns: 1fr;
 	}
 
+
+	/*------------ Mobile Nav ------------*/
+
 	.logo {
 		grid-column: 1 / span 1;
+		width: 25vw;
+		justify-self: start;
+
 	}
 
 	.nav {
-		grid-column: 2 / span 1;
+		display: none;
 	}
 
-   @media screen and (min-width: 800px) {
+	.store-locator {
+		justify-self: end;
+		grid-column: 2 / span 1;
+		width: 5vw;
+	}
+
+	/*------------ Mobile Index Page ------------*/
+	.desktop-hero {
+		display: none;
+	}
+
+	.slider {
+		height: 70vh;
+	}
+
+	.logo-an {
+		height: 90vw;
+	}
+ 
+	.video {
+		grid-column: 1 / span 4;
+		height: 56vw;
+	}
+
+	.explainer {
+		display: none;
+	}
+	
+	.wholesale {
+		height: 40vh;
+	}
+
+	.large-heading {
+		font-size: larger;
+	}
+
+	.video-two {
+		display: none;
+	}
+
+	.contact-info {
+	}
+	
+	.contact-form {
+	}
+
+	.social-icon {
+		width: 3em;
+		justify-self: center;
+	}
+
+	.social-icon-bk {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-evenly;
+		row-gap: 2em;
+		column-gap: 2em;
+		width: 50vw;
+		margin: 0 auto ;
+	}
+	
+
+	/*------------ Start Tablet ------------*/
+
+	@media screen and (min-width: 700px) {
+
+		.site {
+			max-width: 1023px;
+		}
+
+		.margin-top {
+			margin-top: 10vh;
+		}
+
+		.logo-an {
+			height: 50vh;
+			width: 50vw;
+			justify-self: center;
+		}
+
+		.video-two {
+			display: block;
+			grid-column: 1 / span 4;
+			height: 30vh;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+	/*------------ Start Desktop ------------*/
+
+	
+	@media screen and (min-width: 1024px) {
 
 		.site {
 			max-width: none;
+		}
+
+		.margin-top {
+			margin-top: 20vh;
 		}
 
 		/*------------ Grid Items ------------*/
 
 		.head, .main > *, .foot {
 			display: grid;
-			grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+			grid-template-columns: 5vw repeat(2, minmax(auto, 50em)) 5vw;
 		}
 
 		.one-item {
@@ -219,6 +365,15 @@ ___________________________________________ */
 			column-gap: 2em;
 		}
 
+		.five-items {
+			display: grid;
+			grid-column: 2 / span 2;
+			grid-template-columns: repeat(5, 1fr);
+			justify-content: space-evenly;
+			row-gap: 2em;
+			column-gap: 2em;
+		}
+
 		.contact-override {
 			display: grid;
 			grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
@@ -229,8 +384,92 @@ ___________________________________________ */
 
 		/*------------  End Grid Items ------------*/
 
+		/*------------ Desktop Nav ------------*/
+
 		.nav {
+			display: grid;
+			grid-column: 1 / span 1;
+			width: 25vw;
+			justify-self: start;
+		}
+
+		.logo {
+			width: 8vw;
+			grid-column: 2 / span 1;
+			justify-self: center;
+	
+		}
+
+		.store-locator {
+			grid-column: 3 / span 1;
+			width: 15vw;
+		}
+		
+		/*------------ Desktop Hero ------------*/
+		.desktop-hero {
+			display: grid;
+		}
+
+		.bottle-display {
+			width: 70vw;
+			height: 70vh;
+			justify-self: center;
+		}
+
+		.mobile-hero {
+			display: none;
+		}
+
+		/*------------ Desktop Product ------------*/
+		.explainer {
+			display: grid;
+		}
+
+		.prdt-selector {
+			grid-column: 1 / span 1;
+			height: 100vh;
+		}
+
+		.prdt-cards {
 			grid-column: 2 / span 3;
+			height: 100vh;
+
+		}
+
+		.wholesale {
+			height: 100vh;
+		}
+
+		.video-two {
+			height: 25vw;
+			grid-column: 1 / span 4;
+
+		}
+		
+		
+		/*------------ Desktop Contact ------------*/
+		.contact-info {
+			margin-top: 5vh;
+			height: 30vh;
+		}
+		
+		.contact-subh {
+			font-size: medium;
+			grid-column: 1 / span 2;
+		}
+
+		.contact-form {
+			margin-top: 5vh;
+		}
+
+		#contact-form {
+			grid-column: 3 / span 3;
+			height: 20vh;
+		}
+
+		.social-icon-bk {
+			width: 20em;
+			margin: 0 auto ;
 		}
 	}
    }
