@@ -140,11 +140,6 @@ ___________________________________________ */
    }
 
    /*------- End Mobile Padding ---------*/
-
-   
- 
- 
- 
  
  
  
@@ -154,7 +149,6 @@ ___________________________________________ */
 
 	.site {
 		max-width: 699px;
-		margin: 5vw;
 	}
 
 	.margin-top {
@@ -163,42 +157,39 @@ ___________________________________________ */
 
 	/*------------ Mobile Grid Items ------------*/
 
+	
 	.head, .main > *, .foot {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 5vw repeat(2, 1fr) 5vw;
 	}
+	
 
 	.one-item {
 		display: grid;
-		grid-column: 1 / span 2;
+		grid-column: 2 / span 2;
 		grid-template-columns: 1fr;
 	}
 
 	.two-items {
 		display: grid;
-		grid-column: 1 / span 2;
+		grid-column: 2 / span 2;
 		grid-template-columns: repeat(2, 1fr);
 		justify-content: space-evenly;
-		row-gap: 2em;
-		column-gap: 2em;
+		row-gap: 5vw;
+		column-gap: 5vw;
 	}
 
 	.three-items {
 		display: grid;
-		grid-column: 1 / span 2;
+		grid-column: 2 / span 2;
 		grid-template-columns: repeat(2, 1fr);
 		justify-content: space-evenly;
-		row-gap: 2em;
-		column-gap: 2em;
+		row-gap: 5vw;
+		column-gap: 5vw;
 	}
 
 	.five-items {
-		display: grid;
-		grid-column: 1 / span 2;
-		grid-template-columns: repeat(2, 1fr);
-		justify-content: space-evenly;
-		row-gap: 2em;
-		column-gap: 2em;
+		display: block;
 	}
 
 
@@ -215,6 +206,9 @@ ___________________________________________ */
 		grid-column: 1 / span 2;
 		grid-template-columns: 1fr;
 	}
+
+
+	/*------------ Mobile Nav ------------*/
 
 	.logo {
 		grid-column: 1 / span 1;
@@ -234,12 +228,7 @@ ___________________________________________ */
 	}
 
 	/*------------ Mobile Index Page ------------*/
-	
-	.mobile-hide {
-		display: grid;
-	}
-
-	.desktop-hide {
+	.desktop-hero {
 		display: none;
 	}
 
@@ -255,6 +244,10 @@ ___________________________________________ */
 		grid-column: 1 / span 4;
 		height: 56vw;
 	}
+
+	.explainer {
+		display: none;
+	}
 	
 	.wholesale {
 		height: 40vh;
@@ -264,13 +257,14 @@ ___________________________________________ */
 		font-size: larger;
 	}
 
+	.video-two {
+		display: none;
+	}
+
 	.contact-info {
-		height: 50vh;
 	}
 	
 	.contact-form {
-		grid-column: 1 / span 1;
-		height: 30vh;
 	}
 
 	.social-icon {
@@ -287,7 +281,44 @@ ___________________________________________ */
 		width: 50vw;
 		margin: 0 auto ;
 	}
+	
 
+	/*------------ Start Tablet ------------*/
+
+	@media screen and (min-width: 700px) {
+
+		.site {
+			max-width: 1023px;
+		}
+
+		.margin-top {
+			margin-top: 10vh;
+		}
+
+		.logo-an {
+			height: 50vh;
+			width: 50vw;
+			justify-self: center;
+		}
+
+		.video-two {
+			display: block;
+			grid-column: 1 / span 4;
+			height: 30vh;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+	}
 
 
 	/*------------ Start Desktop ------------*/
@@ -297,13 +328,11 @@ ___________________________________________ */
 
 		.site {
 			max-width: none;
-			margin: 0;
 		}
 
 		.margin-top {
 			margin-top: 20vh;
 		}
-
 
 		/*------------ Grid Items ------------*/
 
@@ -377,12 +406,7 @@ ___________________________________________ */
 		}
 		
 		/*------------ Desktop Hero ------------*/
-
-		.mobile-hide {
-			display: none;
-		}
-
-		.desktop-hide {
+		.desktop-hero {
 			display: grid;
 		}
 
@@ -392,15 +416,15 @@ ___________________________________________ */
 			justify-self: center;
 		}
 
-		/*------------ Desktop Content ------------*/
-
-		.logo-an {
-			height: 50vh;
-			width: 50vw;
-			justify-self: center;
+		.mobile-hero {
+			display: none;
 		}
 
 		/*------------ Desktop Product ------------*/
+		.explainer {
+			display: grid;
+		}
+
 		.prdt-selector {
 			grid-column: 1 / span 1;
 			height: 100vh;
@@ -418,6 +442,8 @@ ___________________________________________ */
 
 		.video-two {
 			height: 25vw;
+			grid-column: 1 / span 4;
+
 		}
 		
 		
@@ -438,6 +464,7 @@ ___________________________________________ */
 
 		#contact-form {
 			grid-column: 3 / span 3;
+			height: 20vh;
 		}
 
 		.social-icon-bk {
