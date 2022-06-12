@@ -188,8 +188,16 @@ ___________________________________________ */
 		column-gap: 5vw;
 	}
 
+	.four-items {
+		display: block;
+		grid-column: 2 / span 2;
+		
+	}
+
 	.five-items {
 		display: block;
+		grid-column: 2 / span 2;
+		
 	}
 
 
@@ -205,6 +213,10 @@ ___________________________________________ */
 		display: grid;
 		grid-column: 1 / span 2;
 		grid-template-columns: 1fr;
+	}
+
+	.grid-full {
+		grid-column: 1 / span 4;
 	}
 
 
@@ -300,10 +312,23 @@ ___________________________________________ */
 		grid-column: 1 / span 2;
 	}
 
+	/*------------ Mobile Product Page ------------*/
+	
+	.product-img-lg {
+		height: 70vh;
+	}
 
+	.prd-text {
+		display: none;
+	}
 
+	#prod-des {
+		grid-column: 1 / span 2;
+	}
 
-
+	#prod-img {
+		grid-column: 1/ span 2;
+	}
 
 
 
@@ -397,6 +422,15 @@ ___________________________________________ */
 			column-gap: 2em;
 		}
 
+		.four-items {
+			display: grid;
+			grid-column: 2 / span 2;
+			grid-template-columns: repeat(4, 1fr);
+			justify-content: space-evenly;
+			row-gap: 2em;
+			column-gap: 2em;
+		}
+
 		.five-items {
 			display: grid;
 			grid-column: 2 / span 2;
@@ -413,6 +447,8 @@ ___________________________________________ */
 			background: #f4f4f4;
 			border-bottom: 1px solid #ccc;
 		}
+
+		
 
 		/*------------  End Grid Items ------------*/
 
@@ -519,9 +555,33 @@ ___________________________________________ */
 			grid-column: 2 / span 3;
 		}
 
+		/*------------ Desktop Product Page ------------*/
 
+		#prod-des {
+			grid-column: 3 / span 1;
+			grid-row: 1 / span 1;
+		}
 
+		#prod-img {
+			grid-column: 1/ span 2;
+			grid-row: 1 / span 1;
+		}
 
+		#nut-lab {
+			grid-column: 2 / span 2;
+		}
+
+		#product-image {
+			grid-column: 4 / span 2;
+		}
+
+		.prd-text {
+			display: block;
+		}
+
+		#store-list {
+			grid-column: 2 / span 3;
+		}
 
 	}
    }
