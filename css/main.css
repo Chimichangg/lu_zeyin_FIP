@@ -281,6 +281,38 @@ ___________________________________________ */
 		width: 50vw;
 		margin: 0 auto ;
 	}
+
+	/*------------ Mobile Locator Page ------------*/
+	.mobile-map {
+		height: 50vh;
+	}
+
+	.desktop-map {
+		display: none;
+	}
+
+	.store-list {
+		height: 40vh;
+		margin-bottom: 10vh;
+	}	
+
+	.src-function {
+		grid-column: 1 / span 2;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 	/*------------ Start Tablet ------------*/
@@ -331,7 +363,7 @@ ___________________________________________ */
 		}
 
 		.margin-top {
-			margin-top: 20vh;
+			margin-top: 10vw;
 		}
 
 		/*------------ Grid Items ------------*/
@@ -471,5 +503,25 @@ ___________________________________________ */
 			width: 20em;
 			margin: 0 auto ;
 		}
+
+		/*------------ Desktop Locator Page ------------*/
+
+		.src-function {
+			grid-column: 1 / span 1;
+		}
+
+		.mobile-map {
+			display: none;
+		}
+
+		.desktop-map {
+			display: block;
+			grid-column: 2 / span 3;
+		}
+
+
+
+
+
 	}
    }
