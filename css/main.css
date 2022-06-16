@@ -100,6 +100,13 @@ ___________________________________________ */
 	   text-align: center;
    }
 
+   .box-model-sc {
+	padding: 1em;
+	background: rgb(112, 112, 112);
+	color: white;
+	text-align: center;
+}
+
    .block {
 	display: block;
 }
@@ -208,6 +215,15 @@ ___________________________________________ */
 		background: #f4f4f4;
 		border-bottom: 1px solid #ccc;
 	}
+	
+	.override {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column: 2 / span 2;
+		background: #f4f4f4;
+		border-bottom: 1px solid #ccc;
+	}
+
 
 	.custom-override {
 		display: grid;
@@ -253,7 +269,6 @@ ___________________________________________ */
 	}
  
 	.video {
-		grid-column: 1 / span 4;
 		height: 56vw;
 	}
 
@@ -363,9 +378,6 @@ ___________________________________________ */
 			grid-column: 1 / span 4;
 			height: 30vh;
 		}
-
-
-
 
 
 
@@ -510,7 +522,6 @@ ___________________________________________ */
 
 		.video-two {
 			height: 25vw;
-			grid-column: 1 / span 4;
 
 		}
 		
