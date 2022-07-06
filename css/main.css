@@ -59,7 +59,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 h1, h2, h3, h4, p {
@@ -119,6 +119,10 @@ ___________________________________________ */
 
    .f-right {
 	   float: right;
+   }
+
+   .margin-top-sm {
+	margin-top: 5vh;
    }
 
    /*------- End Floats --------*/
@@ -242,7 +246,6 @@ ___________________________________________ */
 		grid-column: 1 / span 1;
 		width: 25vw;
 		justify-self: start;
-
 	}
 
 	.nav {
@@ -250,9 +253,18 @@ ___________________________________________ */
 	}
 
 	.store-locator {
+		margin: auto 0;
 		justify-self: end;
 		grid-column: 2 / span 1;
-		width: 5vw;
+		width: 7vw;
+	}
+
+	.store-locator span {
+		display: none;
+	}
+
+	.store-locator img {
+		display: block;
 	}
 
 	/*------------ Mobile Index Page ------------*/
@@ -473,8 +485,31 @@ ___________________________________________ */
 			justify-self: start;
 		}
 
+		nav ul li {
+			margin-left: 0 !important;
+		}
+
+		nav ul li {
+			list-style-type: none;
+			display: inline;
+			margin-right: 2vw;
+			font-size: 1.5em;
+			font-weight: 300;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		nav ul li a:hover{
+			position: relative;
+			top: 7px;
+		}
+
+
 		.logo {
-			width: 8vw;
+			width: 9.5vw;
 			grid-column: 2 / span 1;
 			justify-self: center;
 	
@@ -483,6 +518,19 @@ ___________________________________________ */
 		.store-locator {
 			grid-column: 3 / span 1;
 			width: 15vw;
+		}
+
+		.store-locator span {
+			font-size: 1.5em;
+			font-weight: 300;
+			display: block;
+			text-align: right;
+			text-decoration: none;
+			color: black;
+		}
+
+		.store-locator img {
+			display: none;
 		}
 		
 		/*------------ Desktop Hero ------------*/
