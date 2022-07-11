@@ -122,7 +122,7 @@ ___________________________________________ */
    }
 
    .margin-top-sm {
-	margin-top: 5vh;
+	margin-top: 3vh;
    }
 
    /*------- End Floats --------*/
@@ -272,8 +272,43 @@ ___________________________________________ */
 		display: none;
 	}
 
-	.slider {
-		height: 70vh;
+	.mobile-hero {
+		display: block;
+		height: 80vh;
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	.mobile-slider h4{
+		font-family: 'Roboto Condensed', sans-serif;
+		margin-top: 0;
+		font-size: 13vw;
+		line-height: 95%;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.mobile-slider img {
+		display: block;
+		width: 45vw;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	.mobile-slider a {
+		width: 30vw;
+		display: block;
+		padding: 0.1em 1em;
+		background-color: #e04403;
+		color: white;
+		margin: 3vh auto ;
+		border-radius: 20px;
+		font-size: 4vw;
+		text-align: center;
+	}
+
+	.mobile-slider button:active {
+		background-color: #e04403;
 	}
 
 	.logo-an {
@@ -376,7 +411,20 @@ ___________________________________________ */
 		}
 
 		.margin-top {
-			margin-top: 10vh;
+			margin-top: 5vh;
+		}
+
+		.mobile-slider h4 {
+			font-size: 9vw;
+		}
+
+		.mobile-slider a {
+			font-size: 3vw;
+			width: 20vw;
+		}
+
+		.mobile-slider img {
+			width: 30vw;
 		}
 
 		.logo-an {
@@ -390,6 +438,8 @@ ___________________________________________ */
 			grid-column: 1 / span 4;
 			height: 30vh;
 		}
+
+		
 
 
 
@@ -528,6 +578,12 @@ ___________________________________________ */
 			text-decoration: none;
 			color: black;
 		}
+		
+		.store-locator span:hover {
+			position: relative;
+			top: 7px;
+		}
+
 
 		.store-locator img {
 			display: none;
@@ -536,12 +592,74 @@ ___________________________________________ */
 		/*------------ Desktop Hero ------------*/
 		.desktop-hero {
 			display: grid;
+			margin-top: 20vh;
 		}
 
+		.hero-text-display {
+			display: inline;
+			margin: 0 auto;
+			opacity: 0%;
+		}
+
+		.hero-text-display span {
+			position: relative;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 4vw;
+			letter-spacing: -4px;
+			top: 20vh;
+		}
+
+
+
 		.bottle-display {
-			width: 70vw;
-			height: 70vh;
-			justify-self: center;
+			display: inline;
+			height: 120vh;
+			margin: 0 auto;
+		}
+
+		.bottle-display img {
+			width: 15vw;
+			transition: all 0.6s ease-out;
+		}
+
+		#energy {
+			position: relative;
+			left: 3vw;
+			top: 3vh;
+			width: 14vw;
+			transform: rotate(-15deg);
+		}
+
+		#energy:hover {
+			width: 16vw;
+			left: -2vw;
+		}
+
+		#energy:hover ~ .hero-text-display {
+			opacity: 100%;
+		}
+
+		#classic {
+			position: relative;
+			z-index: +1;
+		}
+
+		#classic:hover {
+			width: 17vw;
+		}
+
+		#zero {
+			position: relative;
+			left: -3vw;
+			top: 3vh;
+			width: 14vw;
+			transform: rotate(15deg);
+		}
+
+		#zero:hover {
+			width: 16vw;
+			left: 2vw;
+
 		}
 
 		.mobile-hero {
