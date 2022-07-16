@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="912.72" viewBox="0 0 1920 912.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e04419;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_337" data-name="Rectangle 337" class="cls-1" width="1920" height="912.72"/>
+    </clipPath>
+  </defs>
+  <g id="Group_771" data-name="Group 771" class="cls-2">
+    <path id="Path_1969" data-name="Path 1969" class="cls-1" d="M191.136,348.953c296.334-144.837,581.156,93.4,932.27,86.865C1310.408,432.334,1585.56,358.126,1920,0V790.763a1874.632,1874.632,0,0,1-393.379,74.925c-421.96,34.177-619.346-96.237-1014.014-69.789C396.292,803.692,217.6,828.144,0,912.72V510.7c33.271-44.476,94.534-114.532,191.136-161.747"/>
+  </g>
+</svg>
