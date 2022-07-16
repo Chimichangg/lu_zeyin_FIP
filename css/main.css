@@ -224,8 +224,6 @@ ___________________________________________ */
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-column: 2 / span 2;
-		background: #f4f4f4;
-		border-bottom: 1px solid #ccc;
 	}
 
 
@@ -267,7 +265,46 @@ ___________________________________________ */
 		display: block;
 	}
 
+	/*------------ Mobile Foot ------------*/
+	.foot {
+		background-image: url(../images/foot-bg-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 80vh;
+	}
+
+	.logo-foot {
+		width: 40vw;
+		margin: 10vh 0 0 10vw;
+
+	}
+
+	.foot-hd {
+		font-size: 8vw;
+		margin: 0;
+	}
+
+	.social-icon-bk {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-evenly;
+		row-gap: 2em;
+		column-gap: 2em;
+		width: 50vw;
+		margin: -12vh 0 ;
+		height: 20vh;
+	}
+
+	.social-icon-bk img {
+		width: 12vw;
+	}
+
+
+
+
+
 	/*------------ Mobile Index Page ------------*/
+
 	.desktop-hero {
 		display: none;
 	}
@@ -316,7 +353,14 @@ ___________________________________________ */
 	}
  
 	.video {
-		height: 56vw;
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.73);
+	}
+
+	.video video {
+		margin: 5vh auto;
+		width: 80vw;
+		object-fit: cover;
 	}
 
 	.explainer {
@@ -324,36 +368,100 @@ ___________________________________________ */
 	}
 	
 	.wholesale {
-		height: 40vh;
+		text-align: center;
 	}
 
-	.large-heading {
-		font-size: larger;
+	.wholesale h2 {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 16vw;
+	}
+
+	.wholesale p {
+		font-size: 3vw;
+		font-weight: 100;
+	}
+
+	.wholesale a {
+		display: none;
+	}
+
+	.ws-text {
+		font-size: 3vw;
+		font-weight: 800;
+		padding: 0.5em;
+		border-bottom: #000 solid 0px;
+	}
+
+	.case-pallet {
+		overflow: hidden;
+		display: flex;
+		margin-top: 5vh;
 	}
 
 	.video-two {
 		display: none;
 	}
 
+	.contact-hd {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 12vw;
+		line-height: 80%;
+		padding-right: 40vw;
+		margin-top: 20vh;
+	}
+
 	.contact-info {
+		font-size: 3vw;
+		line-height: 95%;
+		font-weight: 100;
+		margin-top: 12vh;
 	}
-	
+
+	.contact-info h4 {
+		font-weight: 100;
+	}
+
 	.contact-form {
+		color: #000;
+		margin-top: 1vh;
 	}
 
-	.social-icon {
-		width: 3em;
-		justify-self: center;
+	.contact-form input {
+		font-family: 'Nunito Sans', sans-serif;
+		border: none;
+		font-size: 3vw;
+		width: 90vw;
+		border-bottom: #000 1px solid;
+		font-weight: 100;
+		padding: 1.2vh 0 ;
 	}
 
-	.social-icon-bk {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-content: space-evenly;
-		row-gap: 2em;
-		column-gap: 2em;
-		width: 50vw;
-		margin: 0 auto ;
+	.contact-form textarea {
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 3vw;
+		border: none;
+		font-weight: 100;
+		width: 90vw;
+		border-bottom: #000 1px solid;
+		padding: 1.2vh 0 ;
+
+	}
+
+	.contact-form #submit-but {
+		width: 30vw;
+		display: block;
+		padding: 0.1em 1em;
+		background-color: #e04403;
+		color: white;
+		border-radius: 20px;
+		font-size: 3vw;
+		text-align: center;
+		border-bottom: none;
+		margin-top: 2vh;
+	}
+
+	.contact-form #submit-but:active{
+		background-color: #9a2e00;
 	}
 
 	/*------------ Mobile Locator Page ------------*/
@@ -434,8 +542,6 @@ ___________________________________________ */
 		}
 
 		.video-two {
-			display: block;
-			grid-column: 1 / span 4;
 			height: 30vh;
 		}
 
@@ -535,6 +641,10 @@ ___________________________________________ */
 			justify-self: start;
 		}
 
+		nav ul {
+			padding-left: 0;
+		}
+
 		nav ul li {
 			margin-left: 0 !important;
 		}
@@ -542,7 +652,7 @@ ___________________________________________ */
 		nav ul li {
 			list-style-type: none;
 			display: inline;
-			margin-right: 2vw;
+			margin-right: 1.5vw;
 			font-size: 1.5em;
 			font-weight: 300;
 		}
@@ -588,11 +698,54 @@ ___________________________________________ */
 		.store-locator img {
 			display: none;
 		}
+
+		/*------------ Desktop foot ------------*/
+
+		.foot {
+			background-image: url(../images/foot-bg.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 60vh;
+
+		}
+
+		.logo-foot {
+			width: 25vw;
+			margin: -2vh auto;
+		}
+
+		.foot-hd {
+			font-size: 3vw;
+			font-weight: 400;
+			margin: -5vh auto;
+		}
+		
+		.social-icon-bk img {
+			width: 5vw;
+		}
+
+		.social-icon-bk {
+			width: 20vw;
+			margin: -10vh auto;
+		}
+
+		/*.social-icon-bk {
+			width: 20em;
+			margin: 0 auto ;
+		}
 		
 		/*------------ Desktop Hero ------------*/
+		.bg-image {
+			background-image: url(../images/hero-decor.svg);
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+
 		.desktop-hero {
 			display: grid;
 			margin-top: 20vh;
+			
 		}
 
 		.hero-text-display {
@@ -669,52 +822,223 @@ ___________________________________________ */
 		/*------------ Desktop Product ------------*/
 		.explainer {
 			display: grid;
+			background-image: url(../images/explainer-decor.svg);
+			background-repeat: no-repeat;
+			background-position: 0% 0%;
 		}
 
 		.prdt-selector {
 			grid-column: 1 / span 1;
-			height: 100vh;
+			margin-top: 30vh;
 		}
 
-		.prdt-cards {
+		.selector-text {
+			margin: 3vh 5vw;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 600;
+			font-size: 2vw;
+			border-bottom: solid 3px black;
+			font-style: italic;
+
+		}
+
+		.prdt-cards-all {
 			grid-column: 2 / span 3;
-			height: 100vh;
-
+			width: 60vw;
+			display: block;
+			height: 85vh;
+			overflow: hidden;
 		}
+
+		.prdt-card {
+			height: 85vh;
+		}
+
+		#classic-text {
+			margin-left: 25vw;
+			font-size: 1.5vw;
+			font-weight: 400;
+		}
+
+		#classic-text h3{
+			font-size: 7vw;
+			line-height: 90%;
+			padding-bottom: 6vh;
+			padding-top: 8vh;
+			font-weight: 800;
+			font-style: italic;
+		}
+
+		#classic-text h3 span {
+			font-weight: 100;
+		}
+
+		#energy-text {
+			font-size: 1.5vw;
+			font-weight: 400;
+		}
+
+		#energy-text h3 {
+			font-size: 4vw;
+			line-height: 125%;
+			padding-bottom: 6vh;
+			padding-top: 8vh;
+			font-weight: 200;
+		}
+
+		#energy-text h3 span {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 8vw;
+			font-weight: 800;
+		}
+
+		#zero-text p{
+			font-size: 1.5vw;
+			font-weight: 400;
+			margin-left: 30vw;
+		}
+
+		#zero-text h3{
+			font-size: 8vw;
+			font-weight: 100;
+		}
+
+		#zero-text span {
+			font-weight: 700;
+		}
+
+		.zero-bg {
+			background-image: url(../images/zero-display.jpg);
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+
+
+
+
+		/*------------ Desktop Wholesale ------------*/
 
 		.wholesale {
-			height: 100vh;
+			text-align: left;
 		}
 
-		.video-two {
-			height: 25vw;
+		.wholesale h2 {
+			font-size: 6vw;
+		}
 
+		.wholesale p {
+			font-size: 1vw;
+			padding-right: 10vw;
+		}
+
+		.wholesale a {
+			width: 10vw;
+			display: block;
+			padding: 0.1em 1em;
+			background-color: #e04403;
+			color: white;
+			margin: 5vh 0 ;
+			border-radius: 20px;
+			font-size: 1.3vw;
+			text-align: center;
+		}
+
+		.wholesale a:hover {
+			background-color: #9a2e00;
+		}
+
+		.ws-text {
+			font-size: 1.2vw;
+			text-align: center;
+			font-weight: 500;
+		}
+
+		.case-pallet img {
+			width: 20vw;
+		}
+
+		.three-bottle {
+			background-image: url(../images/three-bottle.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50%;
+		}
+		
+		/*------------ Desktop Video Two ------------*/
+
+		.video-two-bg {
+			background-image: url(../images/video-two-decor.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 100%;
+			height: 88vh;
+		}
+		
+		.video-two {
+			margin-top: 20vh;
+		}
+
+		.video-two iframe {
+			width: 40vw;
+			height: 25vw;
+		}
+		
+		.video-two-text {
+			margin-top: 25vh;
+			color: white;
+			padding-right: 15vw;
+			font-size: 1.5vw;
+			font-weight: 200;
+		}
+
+		.video-two-text span {
+			font-size: 2vw;
+			font-weight: 800;
 		}
 		
 		
 		/*------------ Desktop Contact ------------*/
+		.contact-hd {
+			font-size: 6vw;
+			text-align: right;
+			padding-right: 0;
+			margin: 0;
+		}
+
 		.contact-info {
-			margin-top: 5vh;
-			height: 30vh;
+			margin-top: 0;
+			font-size: 1.5vw;
 		}
 		
 		.contact-subh {
-			font-size: medium;
 			grid-column: 1 / span 2;
 		}
 
+		.contact-subh h3 {
+			line-height: 100%;
+			font-weight: 500; 
+			font-size: 2vw;
+		}
+
 		.contact-form {
-			margin-top: 5vh;
-		}
-
-		#contact-form {
 			grid-column: 3 / span 3;
-			height: 20vh;
 		}
 
-		.social-icon-bk {
-			width: 20em;
-			margin: 0 auto ;
+		.contact-form input {
+			font-size: 1.2vw;
+			width: 50vw;
+			font-weight: 500;			
+		}
+
+		.contact-form textarea {
+			font-size: 1.2vw;
+			font-weight: 500;
+			width: 50vw;
+		}
+
+		.contact-form #submit-but {
+			width: 15vw;
+			font-size: 1.3vw;
 		}
 
 		/*------------ Desktop Locator Page ------------*/
