@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Quatro Store Locator</title>
 </head>
@@ -15,31 +19,76 @@
 
 
     <header class="head">
-        <div class="three-items">
+        <div class="three-items margin-top-sm">
             <h2 class="hidden">Main Navigation</h2>
-            <nav class="nav box-model" aria-label="Main Navigation">
+            <nav class="nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="product.html">CLASSIC</a></li>
+                    <li><a href="product.html">ENERGY</a></li>
+                    <li><a href="product.html">ZERO</a></li>
+                </ul>
             </nav>
-            <div class="logo box-model">Logo</div>
-            <div class="store-locator box-model">Icon</div>
+            <a href="index.html" class="logo">
+                <img src="images/quatro-logo-final-04.svg" alt="Quatro Logo">
+            </a>
+            <a href="locator.html" class="store-locator">
+                <span>STORE LOCATOR</span> 
+                <img src="images/locator-icon.svg" alt="Locator Icon">
+            </a>
         </div>
     </header>
 
 
     <main class="main" id="content">
+
         <section>
             <h2 class="hidden">Store Locator</h2>
-            <div class="one-item margin-top">
-                <h3 class="box-model">Find Quatro Near You</h3>
-                <p class="box-model">Description</p>
+            <div class="one-item locator-hd">
+                <h3>FIND QUATRO NEAR YOU</h3>
+                <p class="margin-top-sm">Quatro is now partner with 2 distributors and more than 10 major retail chains, offering the unique experience of Quatro to many customers around the globe. </p>
             </div>      
             
-            <div class="three-items margin-top">
+            <div class="three-items margin-top-sm drop-shadow">
+               
                 <div class="src-function">
-                    <div class="box-model"><h3>Zip Search Bar</h3></div>
-                    <div class="mobile-map box-model"><h3>Mobile Map</h3></div>
-                    <div class="store-list box-model"><h3>Store List</h3></div>
+                    <div class="flex">
+                        <h3 class="hidden">Zip Search Bar</h3>
+                        <input type="zip" placeholder="Zip Code">
+                        <a href="#"><img id="src-but" src="images/search-button.svg" alt="Search Button"></a>
+                    </div>
+
+                    <div class="mobile-map">
+                        <h3 class="hidden">Mobile Map</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.79494597545!2d-81.24862022526524!3d42.948710195925365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef39428aa08a5%3A0x89f19cf55494f7ef!2sWalmart%20Supercentre!5e0!3m2!1sen!2sca!4v1658019198185!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="store-list">
+                        <h3 class="hidden">Store List</h3>
+                        
+                        <div class="store-card">
+                            <span>Walmart Supercentre</span>
+                            <p>1105 Wellington Rd, London, ON N6E 1V4<br>(519)681-7500</p>
+                        </div>
+                        <div class="store-card">
+                            <span>Walmart Supercentre</span>
+                            <p>1105 Wellington Rd, London, ON N6E 1V4<br>(519)681-7500</p>
+                        </div>
+                        <div class="store-card">
+                            <span>Walmart Supercentre</span>
+                            <p>1105 Wellington Rd, London, ON N6E 1V4<br>(519)681-7500</p>
+                        </div>
+                        <div class="store-card">
+                            <span>Walmart Supercentre</span>
+                            <p>1105 Wellington Rd, London, ON N6E 1V4<br>(519)681-7500</p>
+                        </div>                        
+                    </div>
                 </div>
-                <div class="desktop-map box-model"><h3>Desktop Map</h3></div>
+
+
+                <div class="desktop-map">
+                    <h3 class="hidden">Desktop Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.79494597545!2d-81.24862022526524!3d42.948710195925365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef39428aa08a5%3A0x89f19cf55494f7ef!2sWalmart%20Supercentre!5e0!3m2!1sen!2sca!4v1658019198185!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
 
@@ -48,17 +97,30 @@
         <section class="margin-top">
             <div class="one-item">   
                 <div>
-                    <h2 class="contact-hd large-heading box-model">Get In Touch With Us</h2>
+                    <h2 class="contact-hd">GET IN TOUCH WITH US</h2>
+
                     <div class="five-items contact-info">
-                        <div class="box-model contact-subh"><h3>Contact Information</h3></div>
-                        <div class="box-model"><h4>General</h4></div>
-                        <div class="box-model"><h4>Sales</h4></div>
-                        <div class="box-model"><h4>Customer</h4></div>
+                        <div class="contact-subh margin-top"><h3>CONTACT<br>INFORMATION</h3></div>
+                        <div class="margin-top"><h4>GENERAL</h4>info@quatro.com <br>1-800-123-3215</div>
+                        <div class="margin-top"><h4>SALES</h4>info@quatro.com <br>1-800-123-3215</div>
+                        <div class="margin-top"><h4>CUSTOMER</h4>info@quatro.com <br>1-800-123-3215</div>
                     </div>
     
-                    <div class="five-items contact-form margin-top">
-                        <div class="box-model large-heading contact-subh"><h3>Contact Form</h3></div>
-                        <div class="box-model" id="contact-form">Form</div>
+                    <div class="five-items margin-top">
+                        
+                        <div class="contact-subh contact-info"><h3>CONTACT<br>FORM</h3></div>
+                        
+                        <div class="contact-form" id="">
+                            <form action="email.php" method="POST" enctype="text/plain">
+                                <input name="fullName" type="text" placeholder="Name*">
+                                <input name="contactInfo" type="text" required placeholder="Email*">
+                                <input name="Phone" type="phone" required placeholder="Telephone*">
+                                <textarea name="msg" 
+                                placeholder="Enter your questions, comments or concerns here..."></textarea>
+                                <input class="f-right" id="submit-but" name="submit" type="submit" value="Send">
+                            </form>
+                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -67,15 +129,17 @@
     </main>
     
 
-    <footer class="margin-top foot box-model">
+    <footer class="margin-top foot">
         <div class="one-item">
             <h2 class="hidden">Site Footer</h2>
-            <div class="box-model">Logo</div>
-            <h3 class="large-heading box-model">We are Social</h3>
+            <a href="index.html" class="logo-foot">
+                <img src="images/quatro-logo-final-04.svg" alt="Quatro Logo">
+            </a>
+            <h3 class="foot-hd">WE ARE SOCIAL</h3>
             <div class="social-icon-bk">
-                <div class="social-icon box-model">Icon</div>
-                <div class="social-icon box-model">Icon</div>
-                <div class="social-icon box-model">Icon</div>
+                <img src="images/twitter-logo.svg" alt="Twitter Logo">
+                <img src="images/insta-logo.svg" alt="Instagram Logo">
+                <img src="images/linkedin-logo.svg" alt="Linkedin Logo">
             </div>
         </div>
 
