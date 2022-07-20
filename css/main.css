@@ -315,11 +315,65 @@ ___________________________________________ */
 	.mobile-hero {
 		display: block;
 		height: 80vh;
-		width: 100vw;
 		overflow: hidden;
+
 	}
 
-	.mobile-slider h4{
+	.arrow {
+		border: solid black;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 10px;
+		margin: 5px;
+		transform: rotate(-45deg);
+		
+		
+	}
+
+	.a-left {
+		transform: rotate(135deg);
+	}
+
+	.slider-card {
+		width: 90vw;
+	}
+
+	#slider-classic {
+		background: url(../images/classic-mobile-hero-bg.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 17vh;
+	}
+
+	#slider-energy {
+		background: url(../images/energy-mobile-hero-bg.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 15vh;
+	}
+	
+	#slider-energy a {
+		background-color: #00B577;
+	}
+
+	#slider-zero {
+		background: url(../images/zero-mobile-hero-bg.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 10vh;
+	}
+
+	#slider-zero a {
+		background-color: #FFE100;
+	}
+
+	.mslider {
+		display: inline-flex;
+		position: relative;
+		right: 90vw;
+	}
+
+	.mslider h4{
 		font-family: 'Roboto Condensed', sans-serif;
 		margin-top: 0;
 		font-size: 13vw;
@@ -328,14 +382,14 @@ ___________________________________________ */
 		text-align: center;
 	}
 
-	.mobile-slider img {
+	.mslider img {
 		display: block;
 		width: 45vw;
 		margin-left: auto;
   		margin-right: auto;
 	}
 
-	.mobile-slider a {
+	.mslider a {
 		width: 30vw;
 		display: block;
 		padding: 0.1em 1em;
@@ -347,8 +401,8 @@ ___________________________________________ */
 		text-align: center;
 	}
 
-	.mobile-slider button:active {
-		background-color: #e04403;
+	.mobile-slider a:active {
+		filter: brightness(50%);
 	}
 
 	.logo-an {
@@ -372,6 +426,7 @@ ___________________________________________ */
 	
 	.wholesale {
 		text-align: center;
+		width: 90vw;
 	}
 
 	.wholesale h2 {
@@ -390,15 +445,20 @@ ___________________________________________ */
 
 	.ws-text {
 		font-size: 3vw;
-		font-weight: 800;
+		font-weight: 500;
 		padding: 0.5em;
-		border-bottom: #000 solid 0px;
+	}
+
+	.thick-bottom {
+		border-bottom: #000 solid 5px;
 	}
 
 	.case-pallet {
-		overflow: hidden;
-		display: flex;
 		margin-top: 5vh;
+	}
+
+	.case-pallet img {
+		width: 80vw;
 	}
 
 	.video-two {
@@ -890,15 +950,16 @@ ___________________________________________ */
 		.hero-text-display {
 			display: inline;
 			margin: 0 auto;
-			opacity: 0%;
+			opacity: 100%;
 		}
 
 		.hero-text-display span {
 			position: relative;
 			font-family: 'Roboto Condensed', sans-serif;
 			font-size: 4vw;
-			letter-spacing: -4px;
-			top: 20vh;
+			top: 0vh;
+			font-weight: 800;
+			opacity: 20%;
 		}
 
 
@@ -927,7 +988,7 @@ ___________________________________________ */
 			left: -2vw;
 		}
 
-		#energy:hover ~ .hero-text-display {
+		#energy:hover ~ #energy-text-hero {
 			opacity: 100%;
 		}
 
@@ -976,9 +1037,27 @@ ___________________________________________ */
 			font-family: 'Roboto Condensed', sans-serif;
 			font-weight: 600;
 			font-size: 2vw;
-			border-bottom: solid 3px black;
+			border-bottom: solid 3px rgb(107, 107, 107);
 			font-style: italic;
+			color: rgb(101, 101, 101);
+		}
 
+		#sl-txt-classic:hover{
+			color:#e04403;
+			border-bottom: solid 5px #e04403;
+			cursor: pointer;
+		}
+
+		#sl-txt-energy:hover{
+			color:#00B577;
+			border-bottom: solid 5px #00B577;
+			cursor: pointer;
+		}
+
+		#sl-txt-zero:hover{
+			color:#FFE100;
+			border-bottom: solid 5px #FFE100;
+			cursor: pointer;
 		}
 
 		.prdt-cards-all {
@@ -990,13 +1069,18 @@ ___________________________________________ */
 		}
 
 		.prdt-card {
-			height: 85vh;
+			height: 90vh;
+		}
+
+		#moving-stck {
+			position: relative;
+			bottom: 0vh;
 		}
 
 		#classic-text {
 			margin-left: 25vw;
 			font-size: 1.5vw;
-			font-weight: 400;
+			font-weight: 100;
 		}
 
 		#classic-text h3{
@@ -1059,6 +1143,7 @@ ___________________________________________ */
 
 		.wholesale {
 			text-align: left;
+			width: 36vw;
 		}
 
 		.wholesale h2 {
@@ -1066,8 +1151,8 @@ ___________________________________________ */
 		}
 
 		.wholesale p {
-			font-size: 1vw;
-			padding-right: 10vw;
+			font-size: 1.5vw;
+			padding-right: 2vw;
 		}
 
 		.wholesale a {
@@ -1090,10 +1175,11 @@ ___________________________________________ */
 			font-size: 1.2vw;
 			text-align: center;
 			font-weight: 500;
+			cursor: pointer;
 		}
 
 		.case-pallet img {
-			width: 20vw;
+			width: 32vw;
 		}
 
 		.three-bottle {
