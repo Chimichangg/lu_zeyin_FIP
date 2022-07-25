@@ -1409,6 +1409,7 @@ ___________________________________________ */
 		}
 
 		.prd-overlay {
+			display: block;
 			position: absolute;
 			top: 18vw;
 			left: 15vw;
