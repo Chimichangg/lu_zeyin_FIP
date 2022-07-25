@@ -326,6 +326,9 @@ ___________________________________________ */
 		padding: 10px;
 		margin: 5px;
 		transform: rotate(-45deg);
+		position: relative;
+		top: 10vh;
+		z-index: +1;
 		
 		
 	}
@@ -364,13 +367,14 @@ ___________________________________________ */
 	}
 
 	#slider-zero a {
-		background-color: #FFE100;
+		background-color: #e9ce00;
 	}
 
 	.mslider {
 		display: inline-flex;
 		position: relative;
-		right: 90vw;
+		transition: all 0.5s ease-in-out;
+
 	}
 
 	.mslider h4{
@@ -953,15 +957,11 @@ ___________________________________________ */
 			opacity: 100%;
 		}
 
-		.hero-text-display span {
-			position: relative;
+		.hero-text-display {
 			font-family: 'Roboto Condensed', sans-serif;
-			font-size: 4vw;
-			top: 0vh;
+			font-size: 6vw;
 			font-weight: 800;
-			opacity: 20%;
 		}
-
 
 
 		.bottle-display {
@@ -988,8 +988,11 @@ ___________________________________________ */
 			left: -2vw;
 		}
 
-		#energy:hover ~ #energy-text-hero {
-			opacity: 100%;
+		.energy-text-hero {
+			position: relative;
+			right: 8vw;
+			top: 6vh;
+			opacity: 1;
 		}
 
 		#classic {
@@ -999,6 +1002,12 @@ ___________________________________________ */
 
 		#classic:hover {
 			width: 17vw;
+		}
+
+		#classic-text-hero {
+			position: relative;
+			right: 4vw;
+			opacity: 1;
 		}
 
 		#zero {
@@ -1014,6 +1023,14 @@ ___________________________________________ */
 			left: 2vw;
 
 		}
+
+		#zero-text-hero {
+			position: relative;
+			right: -4vw;
+			top: 7.5vh;
+			opacity: 1;
+		}
+
 
 		.mobile-hero {
 			display: none;
@@ -1073,8 +1090,7 @@ ___________________________________________ */
 		}
 
 		#moving-stck {
-			position: relative;
-			bottom: 0vh;
+			transition: all 0.6s ease-in-out;
 		}
 
 		#classic-text {
