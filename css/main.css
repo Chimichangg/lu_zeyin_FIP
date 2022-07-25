@@ -1363,6 +1363,20 @@ ___________________________________________ */
 			font-size: 7vw;
 		}
 
+		#prod-des h4 {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 1.5vw;
+			font-weight: 500;
+			font-style: uppercase;
+			opacity: 0.2;
+		}
+
+		#prod-des h4:hover {
+			opacity: 1;
+			cursor: pointer;
+			transition: all 0.3s ease-in;
+		}
+
 		.prd-icons {
 			display: flex;
 			border-bottom: #000 1px solid;
@@ -1385,6 +1399,55 @@ ___________________________________________ */
 			width: 60vw;
 		}
 
+		.prd-overlay {
+			position: absolute;
+			top: 18vw;
+			left: 15vw;
+			transition: all 1s ease-in-out;
+			transform: translateX(-10vw); 
+			opacity: 0;
+			font-size: 1.2vw;
+		}
+
+		.prd-moving {
+			transform: translateX(0vw); 
+			opacity: 1;
+		}
+
+		.prd-overlay img {
+			width: 20vw;
+			background-color: white;
+			padding: 1em;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.184);
+
+		}
+
+		.circle {
+			background-color: #e04403;
+			width: 7vw;
+			height: 5vw;
+			text-align: center;
+			padding: 2vw 1vw;
+			border-radius: 50%;
+			position: absolute;
+			top: 12vw;
+			left: 20vw;
+			color: rgb(255, 255, 255);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075);
+		}
+
+		.bg-green {
+			background-color: #00B577;
+		}
+
+		.bg-yellow {
+			background-color: #FFE100;
+		}
+
+		#second-circle {
+			top: 22vw;
+		}
+
 		#nut-lab {
 			grid-column: 2 / span 2;
 		}
@@ -1395,14 +1458,15 @@ ___________________________________________ */
 		}
 
 		#product-image {
-			grid-column: 4 / span 2;
+			grid-column: 2 / span 4;
+			height: 70vh;
+			overflow: hidden;
 		}
 
 		#product-image img {
-			width: 45vw;
+			width: 60vw;
 			float: right;
-			margin-top: 0vh;
-			position: static;
+			transform: translateY(-10vh);
 		}
 
 		.prd-text {
