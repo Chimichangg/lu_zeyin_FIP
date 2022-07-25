@@ -15,13 +15,44 @@
 
 
    
-    function moveRight () {
-        if (slider.style.right = `0vw`) {
+   /*function moveRight () {
+        if (slider.style.right == `0vw`) {
         slider.style.right = `90vw`
-        } else if (slider.style.right = `90vw`) {
+        } else if (slider.style.right == `90vw`) {
         slider.style.right = `180vw`
-        } else if (slider.style.right = `180vw`) {
+        } else if (slider.style.right == `180vw`) {
         return
+        }
+    }*/
+
+    function moveRight () {
+        if (slider.style.transform == "translateX(0vw)") {
+        slider.style.transform = "translateX(-90vw)"
+        } else if (slider.style.transform == "translateX(-90vw)") {
+        slider.style.transform = "translateX(-180vw)"
+        } else if (slider.style.transform == "translateX(-180vw)") {
+        return
+        }
+    }
+
+
+    /*function moveLeft () {
+        if (slider.style.right == `0vw`) {
+        return
+        } else if (slider.style.right == `90vw`) {
+        slider.style.right = `0vw`
+        } else if (slider.style.right == `180vw`) {
+        slider.style.right = `90vw`
+        }
+    }*/
+
+    function moveLeft () {
+        if (slider.style.transform == "translateX(0vw)") {
+        return
+        } else if (slider.style.transform == "translateX(-90vw)") {
+        slider.style.transform = "translateX(0vw)"
+        } else if (slider.style.transform == "translateX(-180vw)") {
+            slider.style.transform = "translateX(-90vw)"
         }
     }
 
@@ -43,14 +74,19 @@
 
     function moveSlider () {
         let moveTotal = 90 * this.dataset.offset;
-        prdStck.style.bottom = `${moveTotal}vh`;
+        prdStck.style.transform = `translateY(-${moveTotal}vh)`;
 
     }
+
+   /* function classicShowText () {
+        el.id = ('text-hero');
+    }*/
 
 
 
 
     arrowRight.addEventListener('click',moveRight);
+    arrowLeft.addEventListener('click',moveLeft);
     caseText.addEventListener('click',showCase);
     palletText.addEventListener('click',showPallet);
     selectorClassic.addEventListener('click', moveSlider);
