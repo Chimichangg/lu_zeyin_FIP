@@ -642,6 +642,10 @@ ___________________________________________ */
 		font-weight: 100;
 	}
 
+	#prod-des h4 {
+		display: none;
+	}
+
 	.prd-icons {
 		display: none;
 	}
@@ -653,6 +657,10 @@ ___________________________________________ */
 	#prod-img img {
 		width: 150vw;
 		float: right;
+	}
+
+	.prd-overlay {
+		display: none;
 	}
 
 	#nut-lab img{
@@ -1364,6 +1372,7 @@ ___________________________________________ */
 		}
 
 		#prod-des h4 {
+			display: block;
 			font-family: 'Roboto Condensed', sans-serif;
 			font-size: 1.5vw;
 			font-weight: 500;
@@ -1449,6 +1458,7 @@ ___________________________________________ */
 		}
 
 		#nut-lab {
+			display: none;
 			grid-column: 2 / span 2;
 		}
 
