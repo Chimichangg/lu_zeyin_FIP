@@ -10,7 +10,10 @@
         selectorClassic = document.querySelector('#sl-txt-classic'),
         selectorEnergy = document.querySelector('#sl-txt-energy'),
         selectorZero = document.querySelector('#sl-txt-zero'),
-        prdStck = document.querySelector('#moving-stck')
+        prdStck = document.querySelector('#moving-stck'),
+        overlay = document.querySelector('.prd-overlay'),
+        nutFact = document.querySelector('#prod-des h4')
+        
         ;
 
 
@@ -82,6 +85,10 @@
         el.id = ('text-hero');
     }*/
 
+    function showOverlay () {
+        overlay.classList.toggle("hidden");
+    }
+
 
 
 
@@ -92,5 +99,5 @@
     selectorClassic.addEventListener('click', moveSlider);
     selectorEnergy.addEventListener('click', moveSlider);
     selectorZero.addEventListener('click', moveSlider);
-
+    nutFact.addEventListener('click', showOverlay);
 })();
