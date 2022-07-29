@@ -701,11 +701,10 @@ ___________________________________________ */
 	}
 
 	.pos-bx img {
-		background-color: rgb(250, 250, 250);
 		width: 40vw;
 	}
 
-	#arrow {
+	.arrow-pos {
 		float: right;
 		background: none;
 		margin-top: 2vh;
@@ -946,11 +945,16 @@ ___________________________________________ */
 		}
 		
 		/*------------ Desktop Hero ------------*/
+		.mobile-hero {
+			display: none;
+		}
+
+
 		.bg-image {
 			background-image: url(../images/hero-decor.svg);
 			background-size:cover;
 			background-repeat: no-repeat;
-			background-position: 50%;
+			background-position:50% 0%;
 		}
 
 		.desktop-hero {
@@ -959,23 +963,10 @@ ___________________________________________ */
 			
 		}
 
-		.hero-text-display {
-			display: inline;
-			margin: 0 auto;
-			opacity: 100%;
-		}
-
-		.hero-text-display {
-			font-family: 'Roboto Condensed', sans-serif;
-			font-size: 6vw;
-			font-weight: 800;
-		}
-
-
 		.bottle-display {
 			display: inline;
-			height: 120vh;
-			margin: 0 auto;
+			height: 110vh;
+			margin: 10vh auto 0;
 		}
 
 		.bottle-display img {
@@ -996,13 +987,6 @@ ___________________________________________ */
 			left: -2vw;
 		}
 
-		.energy-text-hero {
-			position: relative;
-			right: 8vw;
-			top: 6vh;
-			opacity: 1;
-		}
-
 		#classic {
 			position: relative;
 			z-index: +1;
@@ -1010,12 +994,6 @@ ___________________________________________ */
 
 		#classic:hover {
 			width: 17vw;
-		}
-
-		#classic-text-hero {
-			position: relative;
-			right: 4vw;
-			opacity: 1;
 		}
 
 		#zero {
@@ -1032,17 +1010,96 @@ ___________________________________________ */
 
 		}
 
+		/*.bottle-display span {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 6vw;
+			font-weight: 800;
+			color: #000;
+			z-index: -1;
+		}*/
+
+		.bottle-display span {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 800;
+			color: #000;
+			z-index: -1;
+			position: absolute;
+			font-size: 3vw;
+			transition: all 0.6s ease-out;
+			opacity: 0;
+		}
+
+		#energy-hero-text {
+			top: 90vh;
+			left: 33vw;
+		}
+
+		#energy:hover ~ #energy-hero-text {
+			transform: translate(-15vw, -55vh) scale(2.5);
+			opacity: 1;
+		}
+
+		#classic-hero-text {
+			top: 90vh;
+			left: 43vw;
+		}
+
+		#classic:hover ~ #classic-hero-text {
+			transform: translate(0, -60vh) scale(2.5);
+			opacity: 1;
+		}
+
+		#zero-hero-text {
+			top: 90vh;
+			left: 57vw;
+		}
+
+		#zero:hover ~ #zero-hero-text {
+			transform: translate(15vw, -55vh) scale(2.5);
+			opacity: 1;
+		}
+
+
+
+
+		/*.hero-text-display {
+			display: inline;
+			margin: 0 auto;
+			opacity: 100%;
+		}
+
+		.hero-text-display {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 6vw;
+			font-weight: 800;
+		}
+
+		.energy-text-hero {
+			position: relative;
+			right: 8vw;
+			top: 6vh;
+			opacity: 1;
+
+		}
+
+		
+		#classic-text-hero {
+			position: relative;
+			right: 4vw;
+			opacity: 1;
+		}
+
+		
+
 		#zero-text-hero {
 			position: relative;
 			right: -4vw;
 			top: 7.5vh;
 			opacity: 1;
-		}
+		}*/
 
+		
 
-		.mobile-hero {
-			display: none;
-		}
 
 		/*------------ Desktop Product ------------*/
 		.explainer {
@@ -1521,10 +1578,11 @@ ___________________________________________ */
 			width: 20vw;
 		}
 
-		#arrow:hover{
-			position: relative;
-			left: 2vw;
-			transition: all 1s ease-in-out;
+		.arrow-pos:hover{
+			/*position: relative;
+			left: 2vw;*/
+			transform: translateX(2vw);
+			transition: all 0.2s ease-in-out;
 		}
 		
 	}

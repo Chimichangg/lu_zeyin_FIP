@@ -46,23 +46,26 @@
 
             <div class="desktop-hero one-item">
                 <h3 class="hidden">Desktop Display</h3>
-                <div class="hero-text-display">
+               <!--<div class="hero-text-display">
                     <span id="energy-text-hero" class="energy-text-hero">ENERGY</span>
                     <span id="classic-text-hero" class="classic-text-hero">CLASSIC</span>
                     <span id="zero-text-hero">ZERO</span>
-                </div>
+                </div>-->
                 <div class="bottle-display">
                     <a href="energy.html">
                         <h4 class="hidden">Energy Bottle Display</h4>
                         <img src="images/energy-bottle.png" id="energy" alt="Energy Bottle Image">
+                        <span id="energy-hero-text">ENERGY</span>
                     </a>
                     <a href="classic.html">
                         <h4 class="hidden">Classic Bottle Display</h4>
                         <img src="images/classic-bottle.png" id="classic" alt="Classic Bottle Image">
+                        <span id="classic-hero-text">CLASSIC</span>
                     </a>
                     <a href="zero.html">
                         <h4 class="hidden">Zero Bottle Display</h4>
                         <img src="images/zero-bottle.png" id="zero" alt="Zero Bottle Image">
+                        <span id="zero-hero-text">ZERO</span>
                     </a>  
                 </div>
 
@@ -124,7 +127,7 @@
                         <div class="prdt-card">
                             <img class="f-left" src="images/classic-display.jpg" alt="Classic Bottle Display" style="width:18vw;">
                             <div id="classic-text">
-                                <h3>CLASSIC<br><span>QUATRO</span></h3>
+                                <h3>CLASSIC <br><span>QUATRO</span></h3>
                                 <p>The classic taste of the Quatro from the 80s. The combination of fruits takes “fruit punch” to the next level. The perfect level of sweetness and sourness coming from the real fruits, setting a new standard of a refreshing drink. An experience that everyone deserves to have for themselves.</p>
                             </div>
                         </div>
@@ -132,13 +135,13 @@
                         <div class="prdt-card">
                             <img class="f-right" src="images/energy-display-shadow.jpg" style="width:28vw;" alt="Energy Bottle Display">
                             <div id="energy-text">
-                                <h3>QUATRO<br><span>ENERGY</span></h3>
+                                <h3>QUATRO <br><span>ENERGY</span></h3>
                                 <p>Infusing with natural ingredients, Quatro Energy combines the classic taste of the Quatro with natural herbs like yerba mate and matcha, giving the boost for your body and mind that you need. </p>
                             </div>
                         </div>
 
                         <div class="prdt-card zero-bg" id="zero-text">
-                            <h3 >QUATRO<span> ZERO</span></h3>
+                            <h3 >QUATRO <span>ZERO</span></h3>
                             <p>For the low sugar advocates, Quatro Zero is perfect to enjoy without worrying about dietary restriction. Zero strikes for being organic, vegan, and being calorie-zero. Giving the best options for heathy lifestyle.</p>
                         </div>
                     </div>
@@ -198,11 +201,11 @@
                         
                         <div class="contact-subh contact-info"><h3>CONTACT<br>FORM</h3></div>
                         
-                        <div class="contact-form" id="">
+                        <div class="contact-form">
                             <form action="email.php" method="POST" enctype="text/plain">
                                 <input name="fullName" type="text" placeholder="Name*">
                                 <input name="contactInfo" type="text" required placeholder="Email*">
-                                <input name="Phone" type="phone" required placeholder="Telephone*">
+                                <input name="Phone" type="tel" required placeholder="Telephone*">
                                 <textarea name="msg" 
                                 placeholder="Enter your questions, comments or concerns here..."></textarea>
                                 <input class="f-right" id="submit-but" name="submit" type="submit" value="Send">
