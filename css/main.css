@@ -638,8 +638,30 @@ ___________________________________________ */
 		font-weight: 800;
 	}
 
+	#prod-des ul {
+		display: flex;
+		list-style-type: none;
+		padding:0 0 0 1vw;
+		margin-bottom: -1vh;
+	}
+
+	#prod-des ul li {
+		margin-right: 2vw;
+		cursor: pointer;
+	}
+
+	#prod-des ul li a {
+		color: #000;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+		font-size: 2.5vw;
+		border-bottom: #000 0.5px solid;
+	}
+
+
 	#prod-des p {
 		font-weight: 100;
+		font-size: 3vw;
 	}
 
 	#prod-des h4 {
@@ -1424,6 +1446,10 @@ ___________________________________________ */
 			grid-row: 1 / span 1;
 		}
 
+		#prod-des ul {
+			display: none;
+		}
+
 		#prod-des h3 {
 			font-size: 7vw;
 		}
@@ -1441,6 +1467,10 @@ ___________________________________________ */
 			opacity: 1;
 			cursor: pointer;
 			transition: all 0.3s ease-in;
+		}
+
+		#prod-des p {
+			font-size: 1vw;
 		}
 
 		.prd-icons {
